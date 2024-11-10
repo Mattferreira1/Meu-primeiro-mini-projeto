@@ -6,9 +6,10 @@
     color: #FFFFFF;
 }
 body{
-    padding: 0.4rem;
+    padding: 1rem;
     background-color: #06090F;
 }
+
 .secondary-text{
     font-family: "inter", "sans-serif";
     font-size:14px ;
@@ -16,31 +17,30 @@ body{
     color: #BFBFBF;
 }
 
-/* HEADER */
-#tittle{
+.navigation{
+    height: 80px;
+}
+
+#Logo{
     color: #00a3ff;
 }
 
-header button > img{
-    width:1rem;
-
-}
-#header-nav{
-    display: flex;
-    gap: 2rem;
-    border: 1px solid red;
-}
-.header-main{
+.first-layer{
+    height: 50%;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
-    border: 1px solid red;
+    padding: 0.4rem;
 }
-.nav-icons{
+
+.first-layer-icons{
+    display: flex;
+    gap: 2rem;
+}
+.navigation-icons{
     background-color: transparent;
     border: 0;
 }
-.nav-icons >img{
+.navigation-icons >img{
     width: 20px ;
     height: 20px;
     cursor: pointer;
@@ -50,7 +50,6 @@ header button > img{
     overflow-x: scroll ;
     gap: 1rem;
     padding: 0.4rem;
-    border: 1px solid red;
     margin: 8px 0;
 
 }
@@ -92,6 +91,8 @@ header button > img{
 
 /* MAIN CONTENT */
 main{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap:8px;
@@ -106,7 +107,6 @@ main{
 }
 .recent-animes{
     position: relative;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,10 +115,9 @@ main{
 }
 .recent-animes img{
     width: 100%;
-    height: 400px;
+    height: 60vh;
     border-radius: 10px;
     position: relative;
-    overflow:auto;
 }
 
 .recent-text{
@@ -143,19 +142,19 @@ main{
 
 
 /* ANIME GRID */
-.anime-grid{
-    display: flex;
-    flex-flow: row wrap ;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2rem;
-}
 
+.animes-grid{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap:20px ;
+    padding: 20px;
+}
 .anime-card{
-    width: 140px;
-    height: 180px;
+    width: 80%;
+    height: 90%;
     background-color: rgb(0, 0, 0);
-    border-radius:8px ;
+
     position: relative;
     border: 0;
     background-color: transparent;
@@ -163,14 +162,15 @@ main{
 
 }
 .anime-card img{
-    width: 140px;
-    height: 180px;
+    width: 100%;
+    height: 100%;
     border-radius:10px ;
 
 }
 
 .gradient-overlay {
     position: absolute;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -178,36 +178,31 @@ main{
     height: 100%;
     background: linear-gradient(to top, rgb(0, 0, 0), transparent);
 }
-.episodes{
-    position: absolute;
-    
-    bottom:8px;
-    left: 40%;
-    z-index: 3;
-
-}
 
 .anime-title{
     text-align: center;
     
 }
+.episodes{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:8px;
+    z-index: 3;
 
-.grid-btn{
-    width: 120px;
-    height: 35px;
+}
+
+
+.btn{
+    margin-top: 14px;
+    width: 140px;
+    height: 60px;
     background-color:#151826 ;
     border: 3px solid #151b16;
     border-radius: 9px ;
     cursor: pointer;
-}
-
-
-.anime-grid2{
-    display: flex;
-    flex-flow: row wrap ;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 3rem;
+    align-self: center;
+    font-size: 20px;
 }
 
 
@@ -221,29 +216,44 @@ footer{
 
 
 @media only screen and (min-width: 1024px) {
-    .anime-grid{
-        gap: 1.5rem; 
+    .recent-animes img{
+        height: 80vh;
     }
-    .anime-grid2{
-        gap: 1rem; 
-        justify-content: space-around;
+
+    .animes-grid{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        grid-gap: 1rem;
+        padding: 4px;
     }
+    .anime-card{
+        width: 140px;
+    }
+
+
+
  }
 
- @media only screen and (min-width: 1440px) {
+
+@media only screen and  (min-width:1440px) {
+    .animes-grid{
+        justify-items: center;
+        grid-gap: 2rem;
+    }
     .anime-card{
-        width: 200px;
+        width: 240px;
         height: 280px;
     }
     .anime-card img{
-        width: 200px;
-        height: 280px;
+        width: 100%;
+        height: 100%;
+        border-radius:10px ;
+    
+        
     }
-    .anime-grid{
-        gap: 2rem; 
-    }
-    .anime-grid2{
-        gap: 1rem; 
-        justify-content: space-around;
-    }
- }
+    .gradient-overlay{
+        width: 100%;
+        height: 100%;
+    } 
+}

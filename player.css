@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "rubik", "sans-serif";
+    color: #FFFFFF;
+}
+body{
+    padding: 1rem;
+    background-color: #06090F;
+}
+
+.secondary-text{
+    font-family: "inter", "sans-serif";
+    font-size:14px ;
+    font-weight: 300;
+    color: #BFBFBF;
+}
+
+.navigation{
+    height: 80px;
+}
+
+#Logo{
+    color: #00a3ff;
+}
+
+.first-layer{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem;
+}
+
+.first-layer-icons{
+    display: flex;
+    gap: 2rem;
+}
+.navigation-icons{
+    background-color: transparent;
+    border: 0;
+}
+.navigation-icons >img{
+    width: 20px ;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+/* MAIN CONTENT */
+
+/* Player  */
+main{
+    padding: 1rem;
+}
+.player-content{
+    margin: 24px 0;
+}
+.player-content >div{
+    display: flex;
+    justify-content: space-around ;
+}
+.player-content h2{
+    margin-bottom:8px;
+}
+
+.player-content video{
+    width: 100%;
+    height: 60vh;
+}
+
+.most-watched{
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    display: none;
+    padding: 8px;
+}
+.most-watched div{
+background-color: #151826 ;
+width: 180px;
+}
+
+.anime-infos{
+    display: flex;
+    gap: 8px;
+}
+.anime-infos img{
+    width: 40px;
+    height: 60px;
+}
+.anime-infos h2{
+    width: 100%;
+}
+/* ABOUT  */
+
+.about{
+    display: flex;
+    margin-bottom: 24px;
+}
+.about > div{
+    display: flex; 
+    padding: 10px;
+}
+.video-infos, .sinopse{
+    width: 50%;
+    height: 240px;
+}
+
+.about img{
+    width: 200px;
+    height: 240px;
+    border-radius: 10px;
+    display: none;
+}
+
+
+/* comments */
+.comments-area{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+    margin: 1.5rem 0;
+}
+.comments-area> div{
+    width: 50%;
+    
+}
+.comments{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+.comments p{
+    font-size: 0.8rem;
+}
+.user-photo{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 99px;
+}
+.comments div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn{
+    width: 120px;
+    height: 35px;
+    background-color:#151826 ;
+    border: 3px solid #151b16;
+    border-radius: 9px ;
+    cursor: pointer;
+}
+
+/* GRID  */
+.animes-grid{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap:20px ;
+    padding: 20px;
+}
+.anime-card{
+    width: 80%;
+    height: 90%;
+    background-color: rgb(0, 0, 0);
+
+    position: relative;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+.anime-card img{
+    width: 100%;
+    height: 100%;
+    border-radius:10px ;
+
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+}
+
+.anime-title{
+    margin-top: 8px;
+    text-align: center;
+    
+}
+
+/* FOOTER  */
+footer{
+    margin-top: 0.2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .player-content{
+        margin: 40px 0;
+        padding: 8px;
+    }
+
+    .player-content > div{
+        display: flex;
+    }
+    .player-content video{
+        width: 80%;
+        height: 70vh;
+    }
+    .most-watched{
+        display: flex;
+    }
+
+    .about{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .about > div{
+        flex-direction: column;
+        height: 20%;
+        width: 600px;
+        margin-bottom: 8px;
+    }
+    .about > div div{
+        height: auto;
+    }
+    
+    .about img {
+        display: block;
+    }
+    .video-infos{
+        margin-bottom: 8px;
+    }
+    .sinopse{
+        width: 600px;
+    }
+    .comments-area{
+        flex-direction: column;
+        padding: 3rem ;
+        
+    }
+
+    .comments-area> div{
+        width: 50%;
+        margin-bottom: 8px;
+        
+    }
+
+    .animes-grid{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        grid-gap: 1rem;
+        padding: 1rem;
+    }
+    .anime-card{
+        width: 140px;
+    }
+
+    .anime-card img{
+        width: 140px;
+        height: 240px;
+        border-radius:10px ;
+    
+    
+    }
+    
+}
+@media only screen and (min-width: 1440px) {
+    .about{
+        display: flex;
+        justify-content: flex-start;
+        padding: 3rem ;
+    }
+    .animes-grid{
+        justify-items: center;
+        grid-gap: 2rem;
+    }
+    .anime-card{
+        width: 240px;
+        height: 280px;
+    }
+    .anime-card img{
+        width: 100%;
+        height: 100%;
+        border-radius:10px ;
+    
+        
+    }
+    .gradient-overlay{
+        width: 100%;
+        height: 100%;
+    } 
+}
