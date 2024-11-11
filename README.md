@@ -3,7 +3,7 @@
 <p>Ani.me é um mini projeto que faz parte de uma atividade proposta pela Digital College, onde o objetivo era criar uma landing page responsiva para uma página web utilizando apenas HTML + CSS na sua criação.</p>
 
 ><h3>*OBS:</h3>
-><p>Responsividade está funcionando somente para tablet(largura de 768px) e computadores(largura de 1024px e 1440px)</p>
+><p>Responsividade está funcionando somente para larguras de tela entre <strong>768px</strong> a <strong>1440px</strong>.</p>
 
 <h1>Bem vindo ao Ani.me!</h1>
 <p>Com isso, apresento o Ani.me, um site de animes onde é possível encontrar diversos animes no nosso catálogo, utilizando de ferramentas de busca como nosso ícone de pesquisa, com os filtros por inicial, por meio dos botões na parte superior da página ou clicando em <strong>Ver mais</strong> abaixo do catálogo.</p>
