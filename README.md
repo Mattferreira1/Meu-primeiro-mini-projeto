@@ -15,7 +15,7 @@
 <p>Também na página do player, existe a seção de <strong>comentários</strong>, onde você pode interagir com outros usuários ou procurar novos animes na parte de <strong>Relacionados</strong>.</p>
 
 ><h3>*Nota</h3>
-><p>É possível ser direcionar para a página do player ou Página principal apenas clicando no texto do rodapé.</p>
+><p>É possível se direcionar para a página do player ou a Página principal apenas clicando no texto do rodapé.</p>
 ><h3>*OBS:</h3>
 ><p><strong>**Essa função não é permanente**</strong> </p>
 
