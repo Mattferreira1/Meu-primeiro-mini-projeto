@@ -105,6 +105,12 @@ main{
     margin: 16px 0;
     gap: 0.4rem;
 }
+
+.flex-box button{
+    border: 0;
+    background-color: transparent;
+}
+
 .recent-animes{
     position: relative;
     display: flex;
@@ -122,7 +128,7 @@ main{
 }
 
 .recent-text{
-    
+    text-align: start;
     width: 500px;
     position: absolute;
     z-index: 3;
