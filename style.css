@@ -106,7 +106,7 @@ main{
     gap: 0.4rem;
 }
 
-.flex-box button{
+.recent-btn{
     border: 0;
     background-color: transparent;
 }
